@@ -60,6 +60,14 @@ kit includes the same skill.
 3. Optional: add the RevExOS connector under **Settings > Connectors > Add custom connector** with the URL `https://revexos.com/api/mcp` ([setup steps](https://revexos.com/mcp)).
 4. The invoice parser skill calls revexos.com from Claude's code sandbox: allow network access for code execution (all domains, or add `revexos.com`).
 
+## Try it with the sample files
+
+`examples/` has a purchase order and the invoice billed against it. The invoice charges 12 data
+pipeline hours where the PO allows 10, so a match should flag that line and hold $300.
+
+- Claude Code: *"Run a three-way match on examples/sample-purchase-order.pdf and examples/sample-invoice.pdf. We received 12 hours."*
+- Any client with the connector: give `match_po_to_invoice` the raw GitHub links to the two files.
+
 ## Notes
 
 - Revenue recognition and tax output follow the standard frameworks but are not a substitute for
