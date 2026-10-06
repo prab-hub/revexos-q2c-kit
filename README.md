@@ -53,7 +53,14 @@ Then just ask, for example:
 If you already have the standalone `revexos-invoice-parser` plugin, you can uninstall it: the
 kit includes the same skill.
 
-### claude.ai or Claude Desktop
+### Claude Desktop or Cowork
+
+1. Open **Customize > Plugins**, click **Add**, choose **Add marketplace > Add from a repository**, and enter `prab-hub/revexos-q2c-kit`.
+2. Install **revexos-q2c-kit** from that marketplace. This adds the skills, the commands and the RevExOS connector.
+
+On Team and Enterprise plans an org owner may control which marketplaces can be added.
+
+### claude.ai in the browser (or if you can't add plugins)
 
 1. Download the skill zips you want from the [latest release](https://github.com/prab-hub/revexos-q2c-kit/releases/latest) (one zip per skill).
 2. Go to **Settings > Capabilities > Skills**, click **Upload skill**, and choose a zip. Repeat for each skill.
