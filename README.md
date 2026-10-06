@@ -36,7 +36,7 @@ Stripe, PayPal and HubSpot servers.
 
 One method, from this GitHub repo. It adds the skills, the commands and the RevExOS connector.
 
-### a) If you're using claude.ai, Claude Desktop or Cowork: 
+### a) If you're using claude.ai, Claude Desktop or Cowork
 
 1. Go to **Customize > Plugins**, click **Add**, then **Add marketplace > Add from a repository**.
 
@@ -50,7 +50,7 @@ One method, from this GitHub repo. It adds the skills, the commands and the RevE
 
 On Team and Enterprise plans an org owner may control which marketplaces can be added.
 
-### b) If you're using in Claude Code: 
+### b) If you're using Claude Code
 
 ```
 /plugin marketplace add prab-hub/revexos-q2c-kit
