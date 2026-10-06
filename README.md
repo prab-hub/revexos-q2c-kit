@@ -39,7 +39,13 @@ One method, from this GitHub repo. It adds the skills, the commands and the RevE
 ### claude.ai, Claude Desktop or Cowork
 
 1. Go to **Customize > Plugins**, click **Add**, then **Add marketplace > Add from a repository**.
-2. Enter `prab-hub/revexos-q2c-kit` and add it.
+
+   ![Add marketplace dialog with "Add from a repository"](docs/images/install-1-add-marketplace.png)
+
+2. Enter `prab-hub/revexos-q2c-kit`, keep **Sync automatically** on so you get updates, and click **Sync**.
+
+   ![Repository URL prab-hub/revexos-q2c-kit entered, then Sync](docs/images/install-2-enter-repo.png)
+
 3. Install **revexos-q2c-kit** from that marketplace.
 
 On Team and Enterprise plans an org owner may control which marketplaces can be added.
