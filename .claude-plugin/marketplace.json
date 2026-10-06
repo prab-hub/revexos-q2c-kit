@@ -1,0 +1,19 @@
+{
+  "name": "revexos-q2c-kit",
+  "description": "RevExOS Q2C Kit for Claude Code.",
+  "owner": {
+    "name": "RevExOS",
+    "email": "contact@revexos.com"
+  },
+  "plugins": [
+    {
+      "name": "revexos-q2c-kit",
+      "source": "./",
+      "description": "Quote-to-cash skills: quotes, contract handoff, PO to invoice, three-way match, billing and proration, payment terms, collections and revenue recognition, billing platform selection, invoice parsing.",
+      "version": "1.0.0",
+      "author": {
+        "name": "RevExOS"
+      }
+    }
+  ]
+}

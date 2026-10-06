@@ -1,0 +1,27 @@
+{
+  "name": "revexos-q2c-kit",
+  "description": "Quote-to-cash skills for Claude: quotes, contract handoff, PO to invoice, three-way match, billing and proration, payment terms and late fees, collections and revenue recognition, billing platform selection, and invoice parsing. Bundles the free RevExOS MCP connector with document tools and calculators.",
+  "version": "1.0.0",
+  "author": {
+    "name": "RevExOS",
+    "url": "https://revexos.com"
+  },
+  "homepage": "https://revexos.com/mcp",
+  "repository": "https://github.com/prab-hub/revexos-q2c-kit",
+  "license": "MIT",
+  "keywords": [
+    "quote-to-cash",
+    "q2c",
+    "cpq",
+    "billing",
+    "invoicing",
+    "accounts-receivable",
+    "accounts-payable",
+    "three-way-match",
+    "collections",
+    "revenue-recognition",
+    "asc-606",
+    "proration",
+    "payment-terms"
+  ]
+}
