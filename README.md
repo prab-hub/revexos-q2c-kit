@@ -34,6 +34,16 @@ Stripe, PayPal and HubSpot servers.
 
 ## Install
 
+One method, from this GitHub repo. It adds the skills, the commands and the RevExOS connector.
+
+### claude.ai, Claude Desktop or Cowork
+
+1. Go to **Customize > Plugins**, click **Add**, then **Add marketplace > Add from a repository**.
+2. Enter `prab-hub/revexos-q2c-kit` and add it.
+3. Install **revexos-q2c-kit** from that marketplace.
+
+On Team and Enterprise plans an org owner may control which marketplaces can be added.
+
 ### Claude Code
 
 ```
@@ -41,7 +51,7 @@ Stripe, PayPal and HubSpot servers.
 /plugin install revexos-q2c-kit@revexos-q2c-kit
 ```
 
-Then just ask, for example:
+### Then just ask
 
 - "Build a quote for a $4k/month marketing retainer, annual prepay, with a 10% discount."
 - "We upgraded a customer from $12k/year to $24k/year after one month. What do we invoice?"
@@ -50,22 +60,12 @@ Then just ask, for example:
 - "Check this supplier invoice against PO-4500123 and the delivery note."
 - "What payment terms and late fee should we put in our MSA?"
 
-If you already have the standalone `revexos-invoice-parser` plugin, you can uninstall it: the
-kit includes the same skill.
+The invoice parser skill sends the file to revexos.com from Claude's code sandbox. If it fails with
+`403 Forbidden` or `connect_rejected`, allow network access for code execution under
+**Settings > Capabilities** (all domains, or add `revexos.com`).
 
-### Claude Desktop or Cowork
-
-1. Open **Customize > Plugins**, click **Add**, choose **Add marketplace > Add from a repository**, and enter `prab-hub/revexos-q2c-kit`.
-2. Install **revexos-q2c-kit** from that marketplace. This adds the skills, the commands and the RevExOS connector.
-
-On Team and Enterprise plans an org owner may control which marketplaces can be added.
-
-### claude.ai in the browser (or if you can't add plugins)
-
-1. Download the skill zips you want from the [latest release](https://github.com/prab-hub/revexos-q2c-kit/releases/latest) (one zip per skill).
-2. Go to **Settings > Capabilities > Skills**, click **Upload skill**, and choose a zip. Repeat for each skill.
-3. Optional: add the RevExOS connector under **Settings > Connectors > Add custom connector** with the URL `https://revexos.com/api/mcp` ([setup steps](https://revexos.com/mcp)).
-4. The invoice parser skill calls revexos.com from Claude's code sandbox: allow network access for code execution (all domains, or add `revexos.com`).
+If you already have the standalone `revexos-invoice-parser` plugin, you can remove it: the kit
+includes the same skill.
 
 ## Try it with the sample files
 
@@ -85,7 +85,6 @@ pipeline hours where the PO allows 10, so a match should flag that line and hold
 
 ## Maintainers
 
-- `scripts/sync-invoice-parser.sh` copies the invoice-parser skill from
-  [prab-hub/revexos-invoice-parser](https://github.com/prab-hub/revexos-invoice-parser), so both
-  plugins ship the same files. Run it before each release.
-- `scripts/build-zips.sh` builds one zip per skill in `dist/` for the release.
+`scripts/sync-invoice-parser.sh` copies the invoice-parser skill from
+[prab-hub/revexos-invoice-parser](https://github.com/prab-hub/revexos-invoice-parser), so both
+plugins ship the same files. Run it before each release.
