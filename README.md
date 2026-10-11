@@ -46,7 +46,7 @@ One method per app. Each adds the skills and the RevExOS connector (Claude Code 
 
    ![Repository URL prab-hub/revexos-q2c-kit entered, then Sync](docs/images/install-2-enter-repo.png)
 
-3. Install **revexos-q2c-kit** from that marketplace.
+3. Adding the marketplace doesn't install anything yet. Open the **Discover** tab, search **RevExOS** and install **RevExOS Q2C Kit**. It then shows under **Yours**.
 
 On Team and Enterprise plans an org owner may control which marketplaces can be added.
 
