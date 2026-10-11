@@ -18,7 +18,8 @@ the customer's AP doesn't reject it.
 - **Invoice**: PO number quoted, vendor, customer, currency, and per line: description,
   SKU, quantity, unit price.
 
-If the documents are files at public links and the RevExOS connector is available, use
+If the RevExOS connector is available and the documents are files at public links or files
+the user attached in ChatGPT, use
 `match_po_to_invoice` (PO + invoice) and `parse_purchase_order` / `parse_invoice` for
 single documents. For local files, use the `revexos-invoice-parser` skill for the invoice
 and read the PO directly. If there is no goods receipt, say it is a **2-way match** and that

@@ -2,8 +2,9 @@
 
 ## Bundled: the RevExOS connector
 
-Installing the plugin in Claude Code also adds the free RevExOS MCP server
-(`https://revexos.com/api/mcp`, see `.mcp.json`). No sign-in. Tools today:
+Installing the plugin in Claude Code, ChatGPT or Codex also adds the free RevExOS MCP server
+(`https://revexos.com/api/mcp`, see `.mcp.json` for Claude and `mcp.json` for ChatGPT/Codex).
+No sign-in. Tools today:
 
 | Tool | Used by |
 |---|---|
@@ -16,7 +17,8 @@ Installing the plugin in Claude Code also adds the free RevExOS MCP server
 | `calculate_late_payment_interest` | payment-terms-late-fees |
 | `calculate_invoice_due_date` | payment-terms-late-fees, po-to-invoice |
 
-The document tools need your email address and allow 5 uses per email per day. The calculators
+The document tools take a public file link, or in ChatGPT a file you attach to the chat. They
+need your email address and allow 5 uses per email per day. The calculators
 need nothing and have no limit.
 
 In claude.ai or Claude Desktop, add it by hand: **Settings > Connectors > Add custom connector**,

@@ -1,6 +1,6 @@
-# RevExOS Q2C Kit for Claude
+# RevExOS Q2C Kit for Claude and ChatGPT
 
-Quote-to-cash skills for Claude: price a deal, turn it into a contract and an order, set up
+Quote-to-cash skills for Claude, ChatGPT and Codex: price a deal, turn it into a contract and an order, set up
 billing and proration, collect the cash, recognize the revenue, and audit the whole process.
 Each skill works on its own and produces a complete output (a quote, an order checklist, an
 invoice, a dunning plan, a revenue schedule, an audit). Connect your accounting, payments or
@@ -24,7 +24,7 @@ Built by [RevExOS](https://revexos.com), a free learning hub for quote-to-cash.
 
 Slash commands in Claude Code: `/quote`, `/parse-invoice`, `/dunning`, `/prorate`, `/revrec-schedule`.
 
-The free **RevExOS MCP connector** is added automatically in Claude Code. Its tools:
+The free **RevExOS MCP connector** is added automatically in Claude Code, ChatGPT and Codex. Its tools:
 `parse_invoice`, `parse_purchase_order`, `match_po_to_invoice`, `generate_ar_collection_email`,
 `calculate_proration`, `build_revrec_schedule`, `calculate_late_payment_interest` and
 `calculate_invoice_due_date`. The calculators use the same code as the
@@ -34,7 +34,7 @@ Stripe, PayPal and HubSpot servers.
 
 ## Install
 
-One method, from this GitHub repo. It adds the skills, the commands and the RevExOS connector.
+One method per app. Each adds the skills and the RevExOS connector (Claude Code also gets the commands).
 
 ### a) If you're using claude.ai, Claude Desktop or Cowork
 
@@ -57,6 +57,21 @@ On Team and Enterprise plans an org owner may control which marketplaces can be 
 /plugin install revexos-q2c-kit@revexos-q2c-kit
 ```
 
+### c) If you're using ChatGPT
+
+Open **Plugins**, search for **RevExOS Q2C Kit**, click **+** to install, then start a new chat and
+pick it with `@`. Attach files straight to the chat: the document tools read them from there.
+(Listed once OpenAI's directory review is done. Until then, add only the MCP server: **Plugins >
++ > Add custom MCP server**, URL `https://revexos.com/api/mcp`, no authentication.)
+
+### d) If you're using Codex
+
+```
+codex plugin marketplace add prab-hub/revexos-q2c-kit
+```
+
+Then run `/plugins` in Codex, install **revexos-q2c-kit**, and start a new session.
+
 ### Then just ask
 
 - "Build a quote for a $4k/month marketing retainer, annual prepay, with a 10% discount."
@@ -66,7 +81,7 @@ On Team and Enterprise plans an org owner may control which marketplaces can be 
 - "Check this supplier invoice against PO-4500123 and the delivery note."
 - "What payment terms and late fee should we put in our MSA?"
 
-The invoice parser skill sends the file to revexos.com from Claude's code sandbox. If it fails with
+In Claude, the invoice parser skill sends the file to revexos.com from the code sandbox. If it fails with
 `403 Forbidden` or `connect_rejected`, allow network access for code execution under
 **Settings > Capabilities** (all domains, or add `revexos.com`).
 

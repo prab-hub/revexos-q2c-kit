@@ -1,7 +1,7 @@
 {
   "name": "revexos-q2c-kit",
   "description": "Quote-to-cash skills for Claude: quotes, contract handoff, PO to invoice, three-way match, billing and proration, payment terms and late fees, collections and revenue recognition, billing platform selection, and invoice parsing. Bundles the free RevExOS MCP connector with document tools and calculators.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "RevExOS",
     "url": "https://revexos.com"

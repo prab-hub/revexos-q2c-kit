@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "revexos-q2c-kit",
+  "version": "1.1.0",
+  "description": "Quote-to-cash skills: quotes, contract handoff, PO to invoice, three-way match, billing and proration, payment terms and late fees, collections and revenue recognition, billing platform selection, and invoice parsing. Bundles the free RevExOS MCP server with document tools and calculators.",
+  "author": {
+    "name": "RevExOS",
+    "email": "contact@revexos.com",
+    "url": "https://revexos.com"
+  },
+  "homepage": "https://revexos.com/mcp",
+  "repository": "https://github.com/prab-hub/revexos-q2c-kit",
+  "license": "MIT",
+  "keywords": ["quote-to-cash", "q2c", "cpq", "billing", "invoicing", "accounts-receivable", "accounts-payable", "three-way-match", "collections", "revenue-recognition", "asc-606", "proration", "payment-terms"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "RevExOS Q2C Kit",
+        "shortDescription": "Quotes, invoices, collections and revenue schedules for B2B finance",
+        "longDescription": "Quote-to-cash skills for B2B and SaaS finance work: build a quote with discount guardrails, turn it into a contract and order, invoice against a customer PO, run a three-way match, set up billing and prorate plan changes, pick payment terms and work out late interest, plan collections, and build an ASC 606 / IFRS 15 revenue schedule. Includes the free RevExOS MCP server: parse invoices and purchase orders, match a PO to an invoice, draft collection emails, and run proration, revenue recognition, late interest and due date calculators that use the same math as revexos.com.",
+        "developerName": "RevExOS",
+        "category": "Productivity",
+        "capabilities": ["Interactive", "Read"],
+        "websiteURL": "https://revexos.com/mcp",
+        "supportURL": "https://revexos.com/contact",
+        "privacyPolicyURL": "https://revexos.com/privacy",
+        "termsOfServiceURL": "https://revexos.com/terms",
+        "defaultPrompt": [
+          "Build a quote for a 12-month SaaS deal with 40 seats and a 15% discount",
+          "Prorate an upgrade from $500 to $900 a month on the 12th of the month",
+          "Draft a firm collections email for an invoice 20 days overdue"
+        ],
+        "brandColor": "#0F1115",
+        "composerIcon": "./assets/logo.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}
